@@ -1,19 +1,22 @@
 # Quadratic-Sieve
-An implementation of the quadratic sieve algorithm for integer factorization. Can factorize 60 digit semiprimes in about 1 minute.
+
+https://en.wikipedia.org/wiki/Quadratic_sieve
+
+An implementation of the quadratic sieve algorithm for integer factorization. Gathers congruences using multiple processes, each using multiple polynomial quadratic sieve, and then solves the system of equations to find a factor.
 
 Usage:  
 
 To use a single process for factorizing n:  
 
-` pypy mpqs n `  
+` pypy mpqs.py n `  
 
 To use p processes:  
 
-` pypy mpqs n p `  
+` pypy mpqs.py n p `  
 
 To print progress of each process and keep printing estimated time remaining:  
 
-` pypy mpqs n p 1 `  
+` pypy mpqs.py n p 1 `  
 
 Example: 
 
